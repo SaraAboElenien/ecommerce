@@ -1,0 +1,131 @@
+.cart-container {
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-top: 70px;
+    margin-bottom: 70px;
+  display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.cart-products {
+    flex: 2;
+}
+
+.cart-summary {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    height: fit-content;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px var(--main-color);
+    padding: 15px 0;
+}
+
+.image-cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.title-products {
+    width: 40%;
+}
+
+.counter-price-info {
+    width: 15%;
+}
+
+.delete-section i {
+    color: red;
+    cursor: pointer;
+}
+
+.coupon-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.coupon-section input {
+    width: 60%;
+    padding: 5px;
+}
+
+.price-breakdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total-price {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.checkout-btn {
+    background-color: #32280f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.checkout-btn:hover {
+    background-color: var(--main-color);
+}
+.image-cart-container img {
+    width: 95%;
+}
+
+
+  @media (max-width: 900px) {
+    .cart-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+
+    .cart-summary{
+        margin-top: 50px;
+    }
+  }
+  @media (max-width: 600px) {
+    .cart-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+
+  .empty-cart{
+    margin: auto;
+  }
+
+
+  .emptiness{
+    width: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

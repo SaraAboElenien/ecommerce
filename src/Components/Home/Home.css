@@ -1,0 +1,71 @@
+.home-header {
+    background-image: url('../../Assets/Images/mid.avif');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+
+
+.home-section h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.home-container {
+    margin-bottom: 70px;
+}
+
+.home-section {
+    text-align: center;
+}
+
+#category-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 70%;
+    margin: auto;
+    gap: 20px;
+}
+
+.category-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.category-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-img {
+    width: 240px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width: 750px) {
+    #category-row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .category-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+
+    }
+
+}
