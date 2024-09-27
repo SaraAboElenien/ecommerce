@@ -87,7 +87,7 @@ const ProductDetails = () => {
                         <label htmlFor="quantity">Quantity:</label>
                         <div className="quantity-controls">
                             <button onClick={() => handleQuantityChange('decrement')}>-</button>
-                           <span className='qualityspan' >{quantity}</span>
+                           <button  >{quantity}</button>
                             <button onClick={() => handleQuantityChange('increment')}>+</button>
                         </div>
                     </div>

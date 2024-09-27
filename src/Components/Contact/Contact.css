@@ -6,46 +6,11 @@
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #fff;
     color: #333;
     padding: 20px;
 }
 
-header {
-    margin-top: 2px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #fff;
-    height: 300px;
-}
-
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../../Assets/Images/mid.avif'); 
-    background-size: cover;
-    background-position: center;
-    filter: blur(2px); 
-}
-
-.header-content,  .breadcrumb  , img{
-    isolation: isolate;
-}
-
-.breadcrumb {
-    font-size: 25px;
-    color: #0c0c0c;
-
-
-}
 .header-content h1{
     font-size: 36px;
     color: #0c0c0c;

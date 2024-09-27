@@ -18,18 +18,10 @@ const validationSchema = Yup.object({
 });
 
 const Contact = () => {
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
   return (
     <div className="contact-container">
-      <header>
-        <div className="header-content">
-          <img src={Logo} alt="logo" />
-          <h1>Contact</h1>
-        </div>
-        <div className="breadcrumb">
-          <a href="/">Home</a> / <span>Contact</span>
-        </div>
-      </header>
+      <div className="home-header"></div>
 
       <section className="contact-section">
         <h2>Get In Touch With Us</h2>
@@ -74,13 +66,13 @@ const Contact = () => {
             initialValues={{ name: '', email: '', subject: '', message: '' }}
             validationSchema={validationSchema}
             onSubmit={(values, { resetForm }) => {
-              setLoading(true); 
+              setLoading(true);
               setTimeout(() => {
                 console.log('Form Submitted', values);
                 alert('Form Submitted Successfully!');
-                setLoading(false); 
+                setLoading(false);
                 resetForm();
-              }, 2000); 
+              }, 2000);
             }}
           >
             {({ isSubmitting }) => (
@@ -139,7 +131,7 @@ const Contact = () => {
                   disabled={isSubmitting || loading}
                 >
                   {loading ? (
-                    <i className="fas fa-spin fa-spinner"></i> 
+                    <i className="fas fa-spin fa-spinner"></i>
                   ) : (
                     'Submit'
                   )}
